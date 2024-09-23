@@ -1,0 +1,40 @@
+main blue color: #0812ff
+
+
+  <!-- 파비콘 설정 -->
+  <link rel="shortcut icon" href="<?php echo G5_THEME_IMG_URL; ?>/fav/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="<?php echo G5_THEME_IMG_URL; ?>/fav/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo G5_THEME_IMG_URL; ?>/fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo G5_THEME_IMG_URL; ?>/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo G5_THEME_IMG_URL; ?>/fav/favicon-16x16.png">
+  <link rel="manifest" href="<?php echo G5_THEME_URL; ?>/manifest.json">
+  
+  테마의 img 폴더에 다음 파일들을 추가하세요:
+favicon.ico
+apple-touch-icon.png (180x180)
+favicon-32x32.png
+favicon-16x16.png
+
+테마 폴더에 manifest.json 파일을 만들고 다음 내용을 추가하세요:
+
+{
+  "name": "사이트 이름",
+  "short_name": "짧은 이름",
+  "icons": [
+    {
+      "src": "img/fav/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/fav/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
+
+android-chrome-192x192.png와 android-chrome-512x512.png 파일도 img 폴더에 추가하세요.
