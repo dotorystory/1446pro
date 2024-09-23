@@ -107,18 +107,48 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
       let language, languageName;
       switch (countryCode) {
         case 'KR': // 한국
+        // case 'KP': // 북한
           language = 'ko';
           languageName = '한국어';
           break;
         case 'ES': // 스페인
+        case 'MX': // 멕시코
+        case 'AR': // 아르헨티나
+        case 'CO': // 콜롬비아
+        case 'PE': // 페루
+        case 'VE': // 베네수엘라
+        case 'CL': // 칠레
+        case 'EC': // 에콰도르
+        case 'GT': // 과테말라
+        case 'CU': // 쿠바
+        case 'BO': // 볼리비아
+        case 'DO': // 도미니카 공화국
+        case 'HN': // 온두라스
+        case 'PY': // 파라과이
+        case 'SV': // 엘살바도르
+        case 'NI': // 니카라과
+        case 'CR': // 코스타리카
+        case 'PA': // 파나마
+        case 'UY': // 우루과이
+        case 'GQ': // 적도 기니
           language = 'es';
           languageName = 'Español';
           break;
         case 'PT': // 포르투갈
+        case 'BR': // 브라질
+        case 'AO': // 앙골라
+        case 'MZ': // 모잠비크
+        case 'CV': // 카보베르데
+        case 'GW': // 기니비사우
+        case 'ST': // 상투메 프린시페
+        case 'TL': // 동티모르
           language = 'pt';
           languageName = 'Português';
           break;
         case 'RU': // 러시아
+        case 'BY': // 벨라루스
+        case 'KZ': // 카자흐스탄
+        case 'KG': // 키르기스스탄
           language = 'ru';
           languageName = 'Русский';
           break;
@@ -126,9 +156,22 @@ include_once(G5_LIB_PATH . '/popular.lib.php');
           language = 'mn';
           languageName = 'Монгол';
           break;
-        case 'SA': // 사우디아라비아 (아랍어 사용 국가 중 하나)
-        case 'AE':
-        case 'EG':
+        case 'SA': // 사우디아라비아
+        case 'AE': // 아랍에미리트
+        case 'EG': // 이집트
+        case 'DZ': // 알제리
+        case 'BH': // 바레인
+        case 'IQ': // 이라크
+        case 'JO': // 요르단
+        case 'KW': // 쿠웨이트
+        case 'LB': // 레바논
+        case 'LY': // 리비아
+        case 'MA': // 모로코
+        case 'OM': // 오만
+        case 'QA': // 카타르
+        case 'SY': // 시리아
+        case 'TN': // 튀니지
+        case 'YE': // 예멘
           language = 'ar';
           languageName = 'العربية';
           break;
